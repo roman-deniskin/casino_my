@@ -1,0 +1,644 @@
+@font-face {
+    font-family: 'panton_blackregular';
+    src: url('fonts/panton-black-webfont.eot');
+    src: url('fonts/panton-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panton-black-webfont.woff2') format('woff2'),
+         url('fonts/panton-black-webfont.woff') format('woff'),
+         url('fonts/panton-black-webfont.ttf') format('truetype'),
+         url('fonts/panton-black-webfont.svg#panton_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pantonbold';
+    src: url('fonts/panton-bold-webfont.eot');
+    src: url('fonts/panton-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panton-bold-webfont.woff2') format('woff2'),
+         url('fonts/panton-bold-webfont.woff') format('woff'),
+         url('fonts/panton-bold-webfont.ttf') format('truetype'),
+         url('fonts/panton-bold-webfont.svg#pantonbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'panton_extrablackregular';
+    src: url('fonts/panton-extrablack-webfont.eot');
+    src: url('fonts/panton-extrablack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panton-extrablack-webfont.woff2') format('woff2'),
+         url('fonts/panton-extrablack-webfont.woff') format('woff'),
+         url('fonts/panton-extrablack-webfont.ttf') format('truetype'),
+         url('fonts/panton-extrablack-webfont.svg#panton_extrablackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'panton_extraboldregular';
+    src: url('fonts/panton-extrabold-webfont.eot');
+    src: url('fonts/panton-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panton-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/panton-extrabold-webfont.woff') format('woff'),
+         url('fonts/panton-extrabold-webfont.ttf') format('truetype'),
+         url('fonts/panton-extrabold-webfont.svg#panton_extraboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'panton_extralightregular';
+    src: url('fonts/panton-extralight-webfont.eot');
+    src: url('fonts/panton-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panton-extralight-webfont.woff2') format('woff2'),
+         url('fonts/panton-extralight-webfont.woff') format('woff'),
+         url('fonts/panton-extralight-webfont.ttf') format('truetype'),
+         url('fonts/panton-extralight-webfont.svg#panton_extralightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'panton_lightregular';
+    src: url('fonts/panton-light-webfont.eot');
+    src: url('fonts/panton-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panton-light-webfont.woff2') format('woff2'),
+         url('fonts/panton-light-webfont.woff') format('woff'),
+         url('fonts/panton-light-webfont.ttf') format('truetype'),
+         url('fonts/panton-light-webfont.svg#panton_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pantonregular';
+    src: url('fonts/panton-regular-webfont.eot');
+    src: url('fonts/panton-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panton-regular-webfont.woff2') format('woff2'),
+         url('fonts/panton-regular-webfont.woff') format('woff'),
+         url('fonts/panton-regular-webfont.ttf') format('truetype'),
+         url('fonts/panton-regular-webfont.svg#pantonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'panton_semiboldregular';
+    src: url('fonts/panton-semibold-webfont.eot');
+    src: url('fonts/panton-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panton-semibold-webfont.woff2') format('woff2'),
+         url('fonts/panton-semibold-webfont.woff') format('woff'),
+         url('fonts/panton-semibold-webfont.ttf') format('truetype'),
+         url('fonts/panton-semibold-webfont.svg#panton_semiboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'panton_thinregular';
+    src: url('fonts/panton-thin-webfont.eot');
+    src: url('fonts/panton-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panton-thin-webfont.woff2') format('woff2'),
+         url('fonts/panton-thin-webfont.woff') format('woff'),
+         url('fonts/panton-thin-webfont.ttf') format('truetype'),
+         url('fonts/panton-thin-webfont.svg#panton_thinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html
+{
+margin: 0;
+padding: 0;
+}
+body
+{
+margin: 0;
+padding: 0;
+font-family: 'panton_lightregular';
+background: #1f2225;
+font-size: 10px;
+color: white;
+}
+.clearfix:after 
+{
+clear: both;
+}
+.clearfix:before, .clearfix:after {
+content: " ";
+display: table;
+}
+.header_wrapper
+{
+height: 50px;
+width: 100%;
+background: #3c4046;
+text-align: center;
+line-height: 50px;
+}
+.content_container
+{
+max-width: 1400px;
+padding: 0 30px;
+margin: auto;
+font-size: 10px;
+}
+.header_content
+{
+
+}
+.top_align
+{
+height: 50px;
+line-height: 50px;
+}
+.header_logo_wrapper
+{
+float: left;
+width: 200px;
+text-align: left;
+}
+.header_logo_a
+{
+display: inline-block;
+vertical-align: middle;
+width: 100%;
+}
+.header_logo
+{
+height: 35px;
+display: inline-block;
+vertical-align: middle;
+transition: opacity 400ms;
+}
+.header_logo:hover
+{
+opacity: .5;
+}
+.page_wrapper
+{
+padding-bottom: 50px;
+}
+.page_content
+{
+
+}
+.main_title
+{
+font-size: 2.3em;
+font-weight: normal;
+}
+.index_form_wrapper
+{
+    
+}
+.auth_form_wrapper
+{
+width: 30%;
+float: left;
+box-sizing: border-box;
+padding-right: 40px;
+}
+.auth_form
+{
+width: 100%;
+}
+.index_form_string
+{
+width: 100%; 
+margin-bottom: 20px;
+}
+.index_form_input
+{
+width: 100%;
+height: 40px;
+line-height: 40px;
+box-sizing: border-box;
+text-align: left;
+padding-left: 10px;
+font-size: 1.4em;
+border: 1px solid white;
+background: none;
+border-radius: 5px;
+color: white;
+}
+.index_form_input::-webkit-input-placeholder {color:#8c8c8c;}
+.index_form_input::-moz-placeholder          {color:#8c8c8c;}/* Firefox 19+ */
+.index_form_input:-moz-placeholder           {color:#8c8c8c;}/* Firefox 18- */
+.index_form_input:-ms-input-placeholder      {color:#8c8c8c;}
+.index_form_input:focus
+{
+
+}
+.index_form_submit
+{
+width: 100%;
+max-width: 200px;
+height: 40px;
+font-size: 1.4em;
+border: 1px solid #03a5d8;
+background: #03a5d8;
+border-radius: 5px;
+color: white;
+}
+.index_form_submit.auth
+{
+border: 1px solid #03a5d8;
+background: #03a5d8;
+}
+.index_form_submit.reg
+{
+border: 1px solid #6c1a94;
+background: #6c1a94;
+}
+.index_form_submit:hover
+{
+
+}
+.form_title
+{
+font-size: 1.8em;
+text-align: left;
+height: 30px;
+line-height: 30px;
+margin-bottom: 10px;
+}
+.header_menu_wrapper
+{
+width: 50%;
+float: left;
+}
+.header_menu_ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+text-align: left;
+padding-left: 50px;
+}
+.header_menu_li
+{
+display: inline-block;
+width: 30%;
+max-width: 100px;
+}
+.header_menu_a
+{
+color: white;
+font-size: 1.4em;
+text-decoration: none;
+}
+.header_menu_a:hover
+{
+text-decoration: underline;
+}
+.header_logout_wrapper
+{
+width: auto;
+float: right;
+}
+.header_logout_btn
+{
+color: #ff6958;
+text-decoration: none;
+font-size: 1.4em;
+background: none;
+border: 0; 
+cursor: pointer;
+background: url(../img/logout.png) no-repeat left center;
+background-size: 15px;
+padding-left: 23px;
+transition: opacity 400ms;
+outline: none;
+}
+.header_logout_btn.login
+{
+background: url(../img/login.png) no-repeat left center;
+background-size: 15px;
+padding-left: 23px;
+color: #409b64;
+font-weight: bold;
+}
+.header_logout_btn:hover
+{
+opacity: .5;
+}
+.authorisation_message
+{
+font-size: 1.5em;
+color: white;
+}
+.prizes_wrapper
+{
+width: 100%;
+max-width: 1200px;
+padding: 0 40px;
+margin: auto;
+box-sizing: border-box;
+}
+.prize_item
+{
+width: 33%;
+float: left;
+padding: 0 20px;
+box-sizing: border-box;
+position: relative;
+}
+.prize_img_wrapper
+{
+width: 100%;
+overflow: hidden;
+border-radius: 10px;
+margin-bottom: 10px;
+height: 290px;
+line-height: 290px;
+text-align: center;
+}
+.prize_img
+{
+max-width: 100%; 
+display: inline-block;
+max-height: 100%;
+vertical-align: middle;
+}
+.prize_name
+{
+font-size: 1.4em;
+font-style: italic;
+text-align: left;
+line-height: 1.5;
+margin-bottom: 10px;
+font-weight: bold;
+}
+.prize_description
+{
+font-size: 1.3em;
+text-align: left;
+}
+.prize_quantity
+{
+width: 60px;
+height: 60px;
+line-height: 60px;
+text-align: center;
+background: #9066b5;
+border-radius: 40px;
+font-size: 1.4em;
+position: absolute;
+top: 40px;
+right: 40px;
+}
+.prizes_title
+{
+text-align: center;
+font-size: 1.8em;
+float: left;
+width: 100%;
+}
+.prizes_btn_wrapper
+{
+float: left;
+width: 100%;
+text-align: center; 
+padding-top: 30px;
+}
+.get_prizes_btn
+{
+width: 150px;
+height: 40px;
+background: #9066b5;
+color: white;
+display: inline-block;
+line-height: 40px;
+cursor: pointer;
+font-size: 1.4em;
+text-decoration: none;
+border-radius: 5px;
+border: 0;
+transition: opacity 400ms;
+outline: none;
+}
+.get_prizes_btn.delete
+{
+background: none;
+}
+.get_prizes_btn:hover
+{
+opacity: .5;
+}
+.total_prizes_area
+{
+width: 100%;
+text-align: center;
+padding-top: 100px;
+}
+.total_prize_container
+{
+position: relative;
+height: 200px;
+width: 200px;
+background: red;
+display: inline-block;
+}
+.prize_item .bx-controls-direction
+{
+position: absolute;
+left: 0;
+right: 0;
+top: 50%;
+margin-top: -10px;
+height: 20px;
+}
+.prize_item .bx-prev
+{
+position: absolute;
+left: 0;
+right: 0;
+width: 20px;
+height: 20px;
+z-index: 2;    
+font-size: 0;
+background: url(../img/left-arrow.png) no-repeat center center;
+background-size: 100%;
+}
+.prize_item .bx-next
+{
+position: absolute;
+right: 0;
+right: 0;
+width: 20px;
+height: 20px;
+background: white;
+z-index: 2;
+font-size: 0;
+background: url(../img/right-arrow.png) no-repeat center center;
+background-size: 100%;
+}
+.bx-pager-item
+{
+width: 10px;
+height: 10px;
+font-size: 0;
+display: inline-block;
+margin: 0 5px;
+}
+.bx-default-pager
+{
+width: 100%;
+text-align: center;
+}
+.bx-pager-link
+{
+width: 10px;
+height: 10px;
+background: #9066b5;
+display: inline-block;
+opacity: .5;
+border-radius: 10px;
+}
+.bx-pager-link.active
+{
+opacity: 1;
+}
+
+
+.total_prizes_area  .prize_item
+{
+display: inline-block;
+max-width: 25%;
+float: none;
+}
+.total_prizes_area .prize_name,
+.total_prizes_area .prize_description
+{
+text-align: center;
+}
+.total_prizes_area .prize_description
+{
+font-size: 1.8em;
+}
+.total_prizes_area .prize_img_wrapper
+{
+height: auto;
+line-height: 1;
+margin-bottom: 20px;
+margin-top: 30px;
+}
+.casino_balance
+{
+background: #9066b5;
+text-align: center;
+height: 40px;
+line-height: 40px;
+font-size: 1.4em;
+border-radius: 20px;
+margin-top: 20px; 
+}
+.prizes_form.saved
+{
+font-size: 1.4em;
+padding-top: 20px;
+display: none;
+}
+.prizes_form.saved.show
+{
+display: block;
+}
+.cabinet_a
+{
+color: #9066b5;
+font-weight: bold;
+}
+
+@media (max-width: 1200px){
+.prize_img_wrapper
+{
+height: 200px;
+line-height: 200px;
+}
+.auth_form_wrapper
+{
+width: 50%;
+}
+}
+@media (max-width: 992px){
+.prizes_wrapper .prizes_title
+{
+margin-bottom: 40px;
+}
+.total_prizes_area .prize_item
+{
+max-width: 100%;
+width: 100%;
+}
+.total_prizes_area .prize_description
+{
+font-size: 1.4em;
+}
+.prizes_wrapper
+{
+padding: 0 10px;
+}
+.prizes_wrapper .prize_item
+{
+width: 100%;
+max-width: 400px;
+margin: auto;
+float: none;
+    margin-bottom: 50px;
+}
+.prize_img_wrapper
+{
+height: auto;
+line-height: 1;
+}
+.prize_img
+{
+max-height: 150px;
+}
+.header_logo_wrapper
+{
+width: 25%;
+}
+.header_logo
+{
+width: 100%;
+height: auto;
+max-height: 35px;
+max-width: 130px;
+}
+.header_menu_ul
+{
+padding: 0 10px;
+}
+.header_logout_wrapper
+{
+line-height: 50px;
+}
+.header_logout_btn
+{
+font-size: 0;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.header_menu_ul
+{
+text-align: center;
+}
+.header_menu_li
+{
+margin: 0 5px;
+}
+.auth_form_wrapper
+{
+width: 100%;
+max-width: 500px;
+margin: auto;
+float: none;
+margin-bottom: 40px;
+padding-right: 0;
+}
+}
+@media (max-width: 768px){
+.header_menu_a
+{
+font-size: 1.2em;
+}
+}
+
